@@ -1,0 +1,9 @@
+def generate_key(password, salt, iterations):
+    assert iterations > 0
+
+    key = password + salt
+
+    for i in range(iterations):
+        key = hashlib.sha256(key).digest()  
+
+    return key
