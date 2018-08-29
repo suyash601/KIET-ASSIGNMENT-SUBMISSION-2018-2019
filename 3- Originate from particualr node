@@ -1,0 +1,9 @@
+parent_map = {}
+for nodeNumber in Node.iter():
+    for nodeId in nodeNumber:
+        if nodeId in parent_map:
+            parent_map[nodeId].append(nodeNumber)
+            
+        else:
+            parent_map[nodeId] = [nodeNumber]
+            
