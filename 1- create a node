@@ -1,0 +1,20 @@
+
+class daynames:
+    def __init__(self, dataval=None):
+        self.dataval = dataval
+        self.nextval = None
+
+e1 = daynames('30')
+e2 = daynames('17')
+e3 = daynames('10')
+
+
+e1.nextval = e2
+e2.nextval = e3
+
+
+thisvalue = e1
+
+while thisvalue:
+        print(thisvalue.dataval)
+        thisvalue = thisvalue.nextval
