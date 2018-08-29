@@ -1,0 +1,13 @@
+if isinstance(t, list):
+        return 1 + max(depth(item) for item in t)
+    else:
+        return 0
+        
+        
+element 1 is an integer
+element 2 is another treelist or None
+element 3 is another treelist or None
+
+ex: [1,[1,None,None],None]
+
+example: tree = [12, [1, None, None], [3, [4, None, None], [2, None, None]]]
